@@ -20,3 +20,9 @@ const CovidSdk = NativeModules.CovidSdk
 export function multiply(a: number, b: number): Promise<number> {
   return CovidSdk.multiply(a, b);
 }
+
+
+export function decode(qrcode: string): Promise<string> {
+  return CovidSdk.decode(qrcode);
+}
+
